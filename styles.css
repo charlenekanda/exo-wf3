@@ -1,0 +1,36 @@
+.head{
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-image: url("asset/background.jpg");
+}
+
+header h1{
+    color: #fff;
+}
+
+header p{
+    color: #fff;
+}
+.row1{
+    margin-top: 20px;
+}
+
+footer{
+    padding-top: 12px;
+}
+
+footer {
+    margin-bottom: 50px;
+}
+
+.rounded-0{
+    width: 173px;
+}
+

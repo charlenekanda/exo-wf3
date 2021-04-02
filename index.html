@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- BOOTSTRAP START -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <!-- BOOTSTRAP END -->
+
+        <!-- FONT-AWESOME -->
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <!-- JAVASCRIPT -->
+        <script type="text/javascript" src="main.js"></script>
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
+
+        <title>Title</title>
+    </head>
+    <body>
+        <header class="head">
+            <nav class="navbar navbar-light bg-transparent ">
+                <div class="container-fluid justify-content-end nav-item dropdown">
+                    <span class="navbar-toggler navbar-toggler-icon" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li class="dropdown-item " href="#">Louer une voiture</li>
+                        <li class="dropdown-item " href="#">Louer un utilitaire</li>
+                        <li class="dropdown-item " href="#">Réserver un chauffeur</li>
+                        <li class="dropdown-item " href="#">Découvrez nos agences</li>
+                        <li class="dropdown-item " href="#">Mon Compte</li>
+                        <li class="dropdown-item " href="#">Contact</li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Fin Nav Menu  -->
+
+            <!-- menu recherche  -->
+            <div class="container d-flex flex-column">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-light">Bienvenue à bord</h1>
+                    <p class="lead">Location de voiture 24h/24 7j/7</p>
+                </div>
+                <div class="col-12 d-flex align-items-center justify-content-center background-translucid">
+                    <form class="w-100">
+                        <div class="row">
+                            <div class="col-3">
+                                <select class="form-select mb-3">
+                                    <option selected>Adresse de départ</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control rounded-left" placeholder="Date de début de location">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text h-100 rounded-right"><i class="fas fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control rounded-left" placeholder="Fin de location">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text h-100 rounded-right"><i class="fas fa-calendar-alt"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-success">Valider ma recherche</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="col-8 mx-auto">
+                <div class=" row1 row flex-row mb-5 justify-content-center">
+                    <div class="col-6">
+                        <h3>7 résultats</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="dropdown d-flex justify-content-end">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Prix croissant
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- Fin element resultat  -->
+                <div class="d-flex flex-row mb-5 justify-content-center">
+                    <div class="col-1 mt-5 d-flex justify-content-end">
+                        <i class="fas fa-caret-left"></i>
+                    </div>
+                    <div class="col-4">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/vehicule1.png" class="d-block w-100" alt="Véhicule noir">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/vehicule1peugeot-208-noir-2.png" class="d-block w-100" alt="véhicule">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Vehicule1-peugeot-208-gti-noir-perla-nera-03_960.png" class="d-block w-100" alt="voiture">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-1 mt-5">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="d-flex justify-content-start"> Peugeot 208 </h3>
+                        <p> Diesel 5 portes GPS, AutoRadio, Forfaits 1000 km (0,5/km supplémentaires).</p>
+                        <p> 999€ - Agence de Paris </p>
+                        <button type="button" class="btn btn-success" href="#" > Réserver et Payer</button>
+                    </div>
+                </div>
+            <!-- Fin Voiture1 -->
+                <div class="d-flex flex-row mb-5 justify-content-center">
+                    <div class="col-1 mt-5 d-flex justify-content-end">
+                        <i class="fas fa-caret-left"></i>
+                    </div>
+                    <div class="col-4">
+                        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/vehicule2.png" class="d-block w-100" alt="Véhicule noir">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/vehicule2Ford-Focus-2014-02.jpeg" class="d-block w-100" alt="véhicule">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Vehicule2Ford-Focus-restylee-2014-01.jpeg" class="d-block w-100" alt="voiture">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-1 mt-5">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="col-6">
+                        <h3> Ford Focus </h3>
+                        <p> Diesel 5 portes GPS, AutoRadio, Forfaits 1000 km (0,5/km supplémentaires).</p>
+                        <p> 999€ </p>
+                        <button type="button" class="btn btn-success" href="#" > Réserver et Payer</button>
+                    </div>
+                </div>
+                <!-- Fin Voiture2 -->
+                <div class="d-flex flex-row mb-5 justify-content-center">
+                    <div class="col-1 mt-5 d-flex justify-content-end">
+                        <i class="fas fa-caret-left"></i>
+                    </div>
+                    <div class="col-4">
+                        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/vehicule3.png" class="d-block w-100" alt="Véhicule noir">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/vehicule3content_brilliant-black.jpeg" class="d-block w-100" alt="véhicule">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/vehicule3image.jpeg" class="d-block w-100" alt="voiture">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-1 mt-5">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="col-6">
+                        <h3> Audi A1 </h3>
+                        <p> Diesel 5 portes GPS, AutoRadio, Forfaits 1000 km (0,5/km supplémentaires).</p>
+                        <p> 1100€ - Agence de Paris</p>
+                        <button type="button" class="btn btn-success" href="#" > Réserver et Payer</button>
+                    </div>
+                </div>
+                <!-- Fin Voiture3 -->
+                <div class="d-flex flex-row mb-5 justify-content-center">
+                    <div class="col-1 mt-5 d-flex justify-content-end">
+                        <i class="fas fa-caret-left"></i>
+                    </div>
+                    <div class="col-4">
+                        <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/vehicule4.png" class="d-block w-100" alt="Véhicule noir">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/vehicule4.jpeg" class="d-block w-100" alt="véhicule">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/vehicule4image.png" class="d-block w-100" alt="voiture">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-1 mt-5">
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                    <div class="col-6">
+                        <h3> Opel Mokka </h3>
+                        <p> Diesel 5 portes GPS, AutoRadio, Forfaits 1000 km (0,5/km supplémentaires).</p>
+                        <p> 1150€ - Agence de Paris</p>
+                        <button type="button" class="btn btn-success" href="#" > Réserver et Payer</button>
+                    </div>
+                </div>
+                <!-- Fin Voiture4 -->
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="d-flex flex-row mt-3 justify-content-center">
+                <div class="col-sm-3 d-flex justify-content-center">
+                    <img src="images/agence.jpg" class="img-fluid rounded-0 float-start" alt="agence de Paris">
+                </div>
+                <div class="col-sm-3">
+                    <span>Notre Agence de Paris</span><br>
+                    <span>3OO Boulevard de Vaugiard, 75015, Paris </span><br>
+                    <span>Ouvert 7j/7 de 9h00 à 13h et de 14h à 20 </span><br>
+                    <span>01 49 78 21 33 </span><br>
+                    <span>contact@vtc.com</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
