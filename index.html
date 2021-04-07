@@ -3,10 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <!-- BOOTSTRAP START -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
         <!-- BOOTSTRAP END -->
 
         <!-- FONT-AWESOME -->
@@ -26,18 +29,16 @@
     </head>
     <body>
         <header class="head">
-            <nav class="navbar navbar-light bg-transparent ">
-                <div class="container-fluid justify-content-end nav-item dropdown">
-                    <span class="navbar-toggler navbar-toggler-icon" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></span>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li class="dropdown-item " href="#">Louer une voiture</li>
-                        <li class="dropdown-item " href="#">Louer un utilitaire</li>
-                        <li class="dropdown-item " href="#">Réserver un chauffeur</li>
-                        <li class="dropdown-item " href="#">Découvrez nos agences</li>
-                        <li class="dropdown-item " href="#">Mon Compte</li>
-                        <li class="dropdown-item " href="#">Contact</li>
-                    </ul>
-                </div>
+            <nav class="navbar navbar-light bg-transparent justify-content-end">
+                <span id='burger' class="border border-white mx-5 rounded burger-menu text-white" data-bs-toggle="dropdown"><i class=" fas fa-bars"></i></span>
+                <ul class="dropdown-menu w-100">
+                    <li class="dropdown-item text-black-50">Louer une voiture</li>
+                    <li class="dropdown-item text-black-50">Louer un utilitaire</li>
+                    <li class="dropdown-item text-black-50">Réserver un chauffeur</li>
+                    <li class="dropdown-item text-black-50">Découvrez nos agences</li>
+                    <li class="dropdown-item text-black-50">Mon Compte</li>
+                    <li class="dropdown-item text-black-50">Contact</li>
+                </ul>
             </nav>
             <!-- Fin Nav Menu  -->
 
@@ -47,40 +48,42 @@
                     <h1 class="font-weight-light">Bienvenue à bord</h1>
                     <p class="lead">Location de voiture 24h/24 7j/7</p>
                 </div>
-                <div class="col-12 d-flex align-items-center justify-content-center background-translucid">
-                    <form class="w-100">
-                        <div class="row">
-                            <div class="col-3">
-                                <select class="form-select mb-3">
-                                    <option selected>Adresse de départ</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <div class="col-3">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control rounded-left" placeholder="Date de début de location">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text h-100 rounded-right"><i class="fas fa-calendar-alt"></i></span>
+                <div class="recherche">
+                    <div class="col-12 d-flex align-items-center justify-content-center background-translucid " id="recherche">
+                        <form class="w-100">
+                            <div class="row">
+                                <div class="col-3">
+                                    <select class="form-select mb-3">
+                                        <option selected>Adresse de départ</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control rounded-left" placeholder="Date de début de location">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text h-100 rounded-right"><i class="fas fa-calendar-alt"></i></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control rounded-left" placeholder="Fin de location">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text h-100 rounded-right"><i class="fas fa-calendar-alt"></i></span>
+                                <div class="col-3">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control rounded-left" placeholder="Fin de location">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text h-100 rounded-right"><i class="fas fa-calendar-alt"></i></span>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-success">Valider ma recherche</button>
+                                </div>
                             </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-success">Valider ma recherche</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </header>

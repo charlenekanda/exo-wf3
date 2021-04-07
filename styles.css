@@ -11,26 +11,52 @@ header{
     background-image: url("asset/background.jpg");
 }
 
+.burger-menu{
+    width: 35px;
+    text-align: center;
+}
+
+.burger-active{
+    background-color: white;
+}
+
 header h1{
     color: #fff;
 }
 
 header p{
     color: #fff;
+    margin-bottom: 300px;
 }
+
+.background-translucid{
+    background: #A8A8A866;
+    height: 52px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+form {
+    width: 25%;
+    border: none;
+    padding: 14px 50px;
+    margin-top: 15px;
+}
+
 .row1{
     margin-top: 20px;
 }
 
-footer{
-    padding-top: 12px;
+footer {
+    padding-top: 45px;
+    padding-bottom: 126px;
 }
 
-footer {
-    margin-bottom: 50px;
+footer img{
+    height: 136px;
 }
 
 .rounded-0{
     width: 173px;
 }
-
